@@ -84,6 +84,7 @@ img {
 	line-height: 1.5;
 	padding: 24px 0;
 	display: block;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-nav:hover,
@@ -106,6 +107,7 @@ img {
 .link-adress {
 	font-style: normal;
 	line-height: 1.5;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-adress:hover,
 .link-adress:focus {
@@ -117,11 +119,12 @@ img {
 	background-color: #2e2f42;
 	padding: 188px 0;
 	text-align: center;
-	background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-		url(../images/hero-background.jpg);
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-background.jpg);
+	max-width: 1440px;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: auto;
+	background-size: cover;
+	margin: 0 auto;
 }
 
 .hero-title {
@@ -149,11 +152,12 @@ img {
 	border-radius: 4px;
 	background-color: #4d5ae5;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-	background: #404bbf;
+	background-color: #404bbf;
 }
 
 /*---------section-2---------*/
@@ -185,6 +189,14 @@ img {
 .about-list-item {
 	width: calc((100% - 72px) / 4);
 	flex-direction: column;
+}
+
+.about-icons-contener {
+	padding: 24px 100px;
+	border-radius: 4px;
+	border: 1px solid #8e8f99;
+	background-color: #f4f4fd;
+	margin-bottom: 8px;
 }
 
 .about-list-title {
@@ -248,6 +260,34 @@ img {
 .team-list-text {
 	line-height: 1.5;
 	text-align: center;
+	margin-bottom: 8px;
+}
+
+.team-icons-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+}
+
+.team-icons-item {
+	width: 40px;
+	height: 40px;
+}
+.team-soc-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #4d5ae5;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+	background-color: #404bbf;
 }
 
 /*---------section-4---------*/
@@ -302,6 +342,13 @@ img {
 	padding: 100px 0;
 }
 
+.footer .container {
+	display: flex;
+}
+
+.footer-description {
+	margin-right: 120px;
+}
 .logo-footer {
 	color: #4d5ae5;
 	font-family: Raleway, sans-serif;
@@ -322,4 +369,36 @@ img {
 	color: #f4f4fd;
 	line-height: 1.5;
 	max-width: 264px;
+}
+
+.footer-subtitle {
+	color: #fff;
+	font-weight: 500;
+	line-height: 1.5;
+	margin-bottom: 16px;
+}
+
+.footer-soc-list {
+	display: flex;
+	gap: 16px;
+}
+
+.footer-soc-item {
+	width: 40px;
+	height: 40px;
+}
+.footer-soc-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #4d5ae5;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+	background-color: #31d0aa;
 }
