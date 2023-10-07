@@ -44,6 +44,8 @@ img {
 .header {
 	border-bottom: 1px solid #e7e9fc;
 	background-color: #fff;
+	box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+		0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .header .container {
 	display: flex;
@@ -211,6 +213,10 @@ img {
 }
 
 .about-icons-contener {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 112px;
 	padding: 24px 100px;
 	border-radius: 4px;
 	border: 1px solid #8e8f99;
@@ -309,6 +315,10 @@ img {
 	background-color: #404bbf;
 }
 
+.team-icons-link {
+	fill: #f4f4fd;
+}
+
 /*---------section-4---------*/
 .portf {
 	padding: 120px 0;
@@ -402,6 +412,7 @@ img {
 
 .footer .container {
 	display: flex;
+	align-items: baseline;
 }
 
 .footer-description {
@@ -459,4 +470,8 @@ img {
 .footer-soc-link:hover,
 .footer-soc-link:focus {
 	background-color: #31d0aa;
+}
+
+.team-icons-link {
+	fill: #f4f4fd;
 }
